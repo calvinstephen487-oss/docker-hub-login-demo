@@ -1,3 +1,4 @@
 Workflow test
 trigger
 trigger
+trigger2
