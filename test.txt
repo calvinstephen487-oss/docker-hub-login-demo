@@ -5,3 +5,4 @@ trigger2
 trigger2
 trigger3
 finaltrigger
+fix variable location
