@@ -1,0 +1,21 @@
+name: TruffleHog Secret Scan
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  trufflehog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Scan for secrets using TruffleHog
+        uses: trufflesecurity/trufflehog@v3.82.0
+        with:
+          scanArguments: --only-verified
+
