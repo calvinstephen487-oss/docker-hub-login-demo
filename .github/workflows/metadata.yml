@@ -1,4 +1,4 @@
-name:METADATA
+name:CI
 
 on:
   push:
