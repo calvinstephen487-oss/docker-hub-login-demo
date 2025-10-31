@@ -1,4 +1,4 @@
-name:CI
+name: Docker Metadata Extraction
 
 on:
   push:
